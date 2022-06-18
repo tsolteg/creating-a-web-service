@@ -75,6 +75,11 @@ docker login
 - will expose or open port from Docker container to our operating system, allowing us to use a program such as MySQL workbench to connect to all the databases
 - If we do not expose the port, we will have to run commands on Cmd/Terminal to run SQL which is not ideal
 - Run either instances and it will start downloading and take a few minutes
+4. Once the image has been dowloanded, you can check the status of the container using ```docker ps ```
+
+**"healthy" or "up 10 seconds" means the container is running***
+![docker status](https://user-images.githubusercontent.com/83501001/174443499-ff3290d2-a66b-4e95-84e4-8e5f054c0a89.png)
+
 
 ## How to deploy PHPMyAdmin on docker
 
