@@ -1,4 +1,4 @@
-# Creating-a-web-service
+# web-service-using-docker
 Hello humans, we are students from IIUM International Islamic University Malaysia. Our team consists of 4 members:
 1) Nabilah Hakim binti Hazri (2013672)
 2) Tanjim Mst Mobasshira Sadia (1824612)
