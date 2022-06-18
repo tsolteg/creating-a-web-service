@@ -13,7 +13,15 @@ We were instructed by Dr. Rizal, our lecturer on an OS project to deploy a compl
 5. [How to deploy PHPMyAdmin on docker](#How-to-deploy-PHPMyAdmin-on-docker)
 
 ## What is docker?
-Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
+Docker can be understood as a
+>software that simplifies the proces of building, running, managing and distributing applications. It does this by virtualizing the operating system of the computer on which it is installed and running (by freecodecamp)
+
+It is a tool to make it easier for creating, deploying and run applications by using containers. Docker is a containerization platform that packages the application and its dependencies together inside a container so that the application works seamlessly in any environment. "Container" is very often used in Docker as it is an alternative to virtual machines and uses the host operating system. It does not have any operating system installed and running on it. You do not have to pre-allocate any RAM in containers as you do in virtual machines.
+
+Here are some terms that are common when using Docker:
+- Docker Image : a template that needed to run an application. Consists of application codes,libraries, tools and etc.
+- Docker Container : executable software package that includes all dependencies required to execute an application
+- Docker Hub : a centralized resource for working with Docker and its components
 
 ## How to Install docker on your computer 
 
