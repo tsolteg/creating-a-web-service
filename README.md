@@ -77,3 +77,5 @@ docker login
 
 ## How to deploy PHPMyAdmin on docker
 
+## Banker's Algorithm Program
+To compile and run BankersAlgo, use Dev C++ or any other suitable C++ compiler (however this has not been tested). Compiling the .cpp file is recommended as using the .exe file has problems reading the text file.
