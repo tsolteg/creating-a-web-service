@@ -27,12 +27,19 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 7. And you are done installing Docker on your desktop!
     
 ## How to deploy PHP on docker
+
     ###Provide a dynamic PHP-based website.
     Let's run some PHP code and see what we get in the browser. The scripts will be run from the directory you           specified in the volumes of your docker-compose.
     ./php/src is used in this case.
 
     Create an index.php file in your project directory,./php/src, and begin developing your PHP scripts.
+    A simple index.php script.
  ![PHPCode](/Images/PHP_Code.png)
+ 
+    Refresh on your browser (http://localhost:8000/), and the results of this simple PHP drive website should be visible.
+   ![SampleRunOfPHP](/Images/SampleRun.png)
+   
+   ****Congratulations !!! You made it!You now have a containerized PHP website.
 
 ## How to deploy Apache on docker
 
