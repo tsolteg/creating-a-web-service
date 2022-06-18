@@ -18,4 +18,6 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 ```
   docker version
 ```
+This indicates that the Docker is currently running on your desktop
+![My Image](docker-version.png)
 
