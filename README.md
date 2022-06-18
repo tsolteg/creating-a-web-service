@@ -1,12 +1,19 @@
-# What is docker?
-Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
-# creating-a-web-service
-Hello humans, we are students from IIUM (International Islamic University Malaysia) on a project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN to create a web service.  In this repo we will provide you on:
+# Creating-a-web-service
+Hello humans, we are students from IIUM (International Islamic University Malaysia). Our team consists of 4 members:
+1) Nabilah Hakim binti Hazri (2013672)
+2) Tanjim Mst Mobasshira Sadia (1824612)
+3) Hareez Sidqi Mohd Fuad (2015199)
+4) Mohammed Fahmi Ahmed (1914939)
+
+We are instructed by Dr. Rizal, our lecturer on a project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN on Docker to create a web service.  In this repository we will provide you on:
 1. How to Install docker on your computer
 2. How to deploy PHP on docker
 3. How to deploy Apache on docker
 4. How to deploy MySQL on docker
 5. How to deploy PHPMyAdmin on docker
+
+# What is docker?
+Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
 
 ## How to Install docker on your computer 
 
@@ -27,46 +34,43 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 7. And you are done installing Docker on your desktop!
     
 ## How to deploy PHP on docker
+### Provide a dynamic PHP-based website
+1. Let's run some PHP code and see what we get in the browser. The scripts will be run from the directory you specified in the volumes of your docker-compose./php/src is used in this case.
 
-    ###Provide a dynamic PHP-based website.
-    Let's run some PHP code and see what we get in the browser. The scripts will be run from the directory you           specified in the volumes of your docker-compose.
-    ./php/src is used in this case.
-
-    Create an index.php file in your project directory,./php/src, and begin developing your PHP scripts.
-    A simple index.php script.
+2.  Create an index.php file in your project directory,./php/src, and begin developing your PHP scripts. A simple index.php script.
  ![PHPCode](/Images/PHP_Code.png)
  
-    Refresh on your browser (http://localhost:8000/), and the results of this simple PHP drive website should be visible.
+3. Refresh on your browser (http://localhost:8000/), and the results of this simple PHP drive website should be visible.
    ![SampleRunOfPHP](/Images/SampleRun.png)
    
-   ****Congratulations !!! You made it!You now have a containerized PHP website.
+   ***Congratulations !!! You made it!You now have a containerized PHP website.***
 
 ## How to deploy Apache on docker
 
-  ###Setup and run a local PHP Apache server instance
-        The container name is simply a name for your PHP container that you choose at random.
+  ### Setup and run a local PHP Apache server instance
+The container name is simply a name for your PHP container that you choose at random.
 For example, php-apache is a container name.
 
 
-        The official PHP image, which is the version of PHP Apache you wish to use, is the container image. We're using the Docker hub to get image: php:8.0-apache in this example.
+The official PHP image, which is the version of PHP Apache you wish to use, is the container image. We're using the Docker hub to get image: php:8.0-apache in this example.
 
 
-        The volume - this will create a working src directory for your code/source files in your current working directory. That file would have to be in that directory if you wanted to run a PHP script.
+The volume - this will create a working src directory for your code/source files in your current working directory. That file would have to be in that directory if you wanted to run a PHP script.
          
-         Such As:volumes:- ./php/src:/var/www/html/
+Such As:volumes:- ./php/src:/var/www/html/
                           
-        The port numbers are important. This specifies the ports from which the script will run. It will map the port  on your local computer to an Apache server port.
+The port numbers are important. This specifies the ports from which the script will run. It will map the port  on your local computer to an Apache server port.
         
-        Consider the following scenario:ports: - 8000:80
+Consider the following scenario:ports: - 8000:80
         
-        This means we're going to set up an Apache server to listen on port 80. From within Docker containers, port 8000 connects to the PHP scripts and executes them in a browser.
+This means we're going to set up an Apache server to listen on port 80. From within Docker containers, port 8000 connects to the PHP scripts and executes them in a browser.
 
   
-        This is how you docker-compose.yml should look like.Let’s test it out. Go ahead and run docker-compose up. That’s going to pull all the information, download the Apache server, build the image, and run the container.
+This is how you docker-compose.yml should look like.Let’s test it out. Go ahead and run docker-compose up. That’s going to pull all the information, download the Apache server, build the image, and run the container.
 ![compose.yml file running](/Images/ymlCode.png)
 
 
-       If you open the Docker desktop engine, the container should be up and running.
+If you open the Docker desktop engine, the container should be up and running.
 ![ApacheServerRunning](/Images/ApacheRunning.png)
         
         
