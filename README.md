@@ -29,12 +29,36 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 ## How to deploy PHP on docker
 
 ## How to deploy Apache on docker
-This is how you docker-compose.yml should look like.
+
+  ###Setup and run a local PHP Apache server instance
+        The container name is simply a name for your PHP container that you choose at random.
+For example, php-apache is a container name.
+
+
+        The official PHP image, which is the version of PHP Apache you wish to use, is the container image. We're using the Docker hub to get image: php:8.0-apache in this example.
+
+
+        The volume - this will create a working src directory for your code/source files in your current working directory. That file would have to be in that directory if you wanted to run a PHP script.
+         
+         Such As:volumes:- ./php/src:/var/www/html/
+                          
+        The port numbers are important. This specifies the ports from which the script will run. It will map the port  on your local computer to an Apache server port.
+        
+        Consider the following scenario:ports: - 8000:80
+        
+        This means we're going to set up an Apache server to listen on port 80. From within Docker containers, port 8000 connects to the PHP scripts and executes them in a browser.
+
+  
+        This is how you docker-compose.yml should look like.Let’s test it out. Go ahead and run docker-compose up. That’s going to pull all the information, download the Apache server, build the image, and run the container.
 ![compose.yml file running](/Images/ymlCode.png)
 
 
-Let’s test it out. Go ahead and run docker-compose up. That’s going to pull all the information, download the Apache server, build the image, and run the container.
+       If you open the Docker desktop engine, the container should be up and running.
 ![ApacheServerRunning](/Images/ApacheRunning.png)
+        
+        
+         
+         
     
 ## How to deploy MySQL on docker
 In order to run MySQL on docker we need to :
