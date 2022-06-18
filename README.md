@@ -18,6 +18,41 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 ```
   docker version
 ```
-This indicates that the Docker is currently running on your desktop
+- This indicates that the Docker is currently running on your desktop
+    
 ![docker version](https://user-images.githubusercontent.com/83501001/174430912-cd24d7f5-bd89-422f-8238-c384ea05ea87.png)
+    
+7. And you are done installing Docker on your desktop!
+    
+## How to deploy PHP on docker
+
+## How to deploy Apache on docker
+    
+## How to deploy MySQL on docker
+In order to run MySQL on docker we need to :
+    
+1. Make sure that the Docker is running on your desktop
+2. Open Cmd or Terminal depending on your OS and Log in to Docker
+```
+  docker login
+```
+- You may create an account on Docker Hub https://hub.docker.com
+4. Download MySQL image
+```
+  docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+```
+>some-mysql 
+- is the name of the image and can be changed
+>-e
+- is the environment variables
+>my-secret-pw
+- is the example root password that can be changed  
+> -d
+- is the detached mode, means container runs in the background and we can use our Cmd/Terminal for other commands
+- Final part is the path to image on Docker Hub which will be downloaded 
+> tag
+- is the version that can be downloaded, for more versions you may visit https://hub.docker.com/_/mysql
+    
+
+## How to deploy PHPMyAdmin on docker
 
