@@ -34,12 +34,21 @@ In order to run MySQL on docker we need to :
 1. Make sure that the Docker is running on your desktop
 2. Open Cmd or Terminal depending on your OS and Log in to Docker
 ```
-  docker login
+docker login
 ```
 - You may create an account on Docker Hub https://hub.docker.com
-4. Download MySQL image
+
+3. Download MySQL image
+- You can actually start downlading by pulling MySQL image first OR just straight run the MySQL image, if the image is not available yet, it will be downloaded first
+- To pull the MySQL image, you may get the URL of the image at https://hub.docker.com/_/mysql which is 
 ```
-  docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+  docker pull mysql
+```
+- After pulling the image you may run the image with your choice of instances, here we provided 2 of the instances: 
+
+**Original MySQL instance given on Docker Hub website**
+```
+  docker run –name some -mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 >some-mysql 
 - is the name of the image and can be changed
@@ -52,7 +61,17 @@ In order to run MySQL on docker we need to :
 - Final part is the path to image on Docker Hub which will be downloaded 
 > tag
 - is the version that can be downloaded, for more versions you may visit https://hub.docker.com/_/mysql
-    
+
+**Modified MySQL instance that we are going to use on this tutorial**
+```
+  docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+```
+- tag removed will download the latest version of MySQL
+> -p
+- shorts for "port"
+> 3306:3306
+- will expose or open port from Docker container to our operating system, allowing us to use a program such as MySQL workbench to connect to all the databases
+- If we do not expose the port, we will have to run commands on Cmd/Terminal to run SQL which is not ideal
 
 ## How to deploy PHPMyAdmin on docker
 
