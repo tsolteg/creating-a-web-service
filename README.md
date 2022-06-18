@@ -6,7 +6,7 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 4) Mohammed Fahmi Ahmed (1914939)
 
 We are instructed by Dr. Rizal, our lecturer on a project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN on Docker to create a web service.  In this repository we will provide you on:
-1. How to Install docker on your computer
+1. [How to Install docker on your computer](##How-to-Install-docker-on-your-computer)
 2. How to deploy PHP on docker
 3. How to deploy Apache on docker
 4. How to deploy MySQL on docker
