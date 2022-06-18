@@ -30,7 +30,7 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 
 ## How to deploy Apache on docker
 This is how you docker-compose.yml should look like.
-![compose.yml file running](/images/ymlCode.png)
+![compose.yml file running](/Images/ymlCode.png)
     
 ## How to deploy MySQL on docker
 In order to run MySQL on docker we need to :
