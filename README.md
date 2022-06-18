@@ -74,6 +74,7 @@ docker login
 > 3306:3306
 - will expose or open port from Docker container to our operating system, allowing us to use a program such as MySQL workbench to connect to all the databases
 - If we do not expose the port, we will have to run commands on Cmd/Terminal to run SQL which is not ideal
+- Run either instances and it will start downloading and take a few minutes
 
 ## How to deploy PHPMyAdmin on docker
 
