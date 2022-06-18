@@ -29,6 +29,7 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 ## How to deploy PHP on docker
 
 ## How to deploy Apache on docker
+This is how you docker-compose.yml should look like.
     
 ## How to deploy MySQL on docker
 In order to run MySQL on docker we need to :
