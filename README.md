@@ -98,6 +98,10 @@ docker login
 9. Leave everything by default and click test
 - If everything has been set up correctly, connection should be successful
 10. Click "ok" and save the connection
+11. Click on the connection grid you have just created
+![grid connection](https://user-images.githubusercontent.com/83501001/174445247-46b4f023-9050-415e-b22d-b837dbf9cdd3.jpg)
+- this will lead to the MySQL workspace and you may enter your query 
+![mysql workspace](https://user-images.githubusercontent.com/83501001/174445313-e0240e9a-cdf8-4723-91b6-7b1512accf9e.png)
 
 
 
