@@ -12,7 +12,7 @@ We are instructed by Dr. Rizal, our lecturer on a project to deploy a complete A
 4. How to deploy MySQL on docker
 5. How to deploy PHPMyAdmin on docker
 
-# What is docker?
+## What is docker?
 Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
 
 ## How to Install docker on your computer 
