@@ -85,8 +85,17 @@ docker login
 - For this tutorial, we wil be using MySQL Workbench to connect
 - If you have not yet downloaded MySQL Workbench, you may do so at https://www.mysql.com/products/workbench/
 - You may use other IDE that works on your desktop and the process should be similar
-7. In MySQL Workbench, click "create a new connection" icon 
+7. In MySQL Workbench, click "create a new connection" icon as circled in the image:
 ![create new connection](https://user-images.githubusercontent.com/83501001/174443736-059a76fd-bd43-40f0-9ca0-723e0b18eea3.jpg)
+- You will now see "Setup New Connection" window
+8. Fill in the necessary text box as in below:
+- Connection name: Local Docker (can be any name)
+- Hotsname : 127.0.0.1
+- Username : root
+- For the password, enter the password you provided when you ran the MySQL instance earlier, as in this tutorial we use the "my-secret-pw"
+9. Leave everything by default and click test
+- If everything has been set up correctly, connection should be successful
+10. Click "ok" and save the connection
 
 
 
