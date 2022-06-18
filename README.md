@@ -1,6 +1,6 @@
 # What is docker?
 Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
-# creating-a-web-service
+# Creating-a-web-service
 Hello humans, we are students from IIUM (International Islamic University Malaysia) on a project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN to create a web service.  In this repo we will provide you on:
 1. How to Install docker on your computer
 2. How to deploy PHP on docker
@@ -28,15 +28,13 @@ Hello humans, we are students from IIUM (International Islamic University Malays
     
 ## How to deploy PHP on docker
 
-    ###Provide a dynamic PHP-based website.
-    Let's run some PHP code and see what we get in the browser. The scripts will be run from the directory you           specified in the volumes of your docker-compose.
-    ./php/src is used in this case.
+###Provide a dynamic PHP-based website.
+1. Let's run some PHP code and see what we get in the browser. The scripts will be run from the directory you specified in the volumes of your docker-compose./php/src is used in this case.
 
-    Create an index.php file in your project directory,./php/src, and begin developing your PHP scripts.
-    A simple index.php script.
+2.  Create an index.php file in your project directory,./php/src, and begin developing your PHP scripts. A simple index.php script.
  ![PHPCode](/Images/PHP_Code.png)
  
-    Refresh on your browser (http://localhost:8000/), and the results of this simple PHP drive website should be visible.
+3. Refresh on your browser (http://localhost:8000/), and the results of this simple PHP drive website should be visible.
    ![SampleRunOfPHP](/Images/SampleRun.png)
    
    ****Congratulations !!! You made it!You now have a containerized PHP website.
