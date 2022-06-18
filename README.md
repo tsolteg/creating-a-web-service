@@ -92,7 +92,10 @@ docker login
 - Connection name: Local Docker (can be any name)
 - Hotsname : 127.0.0.1
 - Username : root
-- For the password, enter the password you provided when you ran the MySQL instance earlier, as in this tutorial we use the "my-secret-pw"
+![setup window](https://user-images.githubusercontent.com/83501001/174445049-dab6dde6-dfae-41e4-8daa-d3ccd7532a96.png)
+- For the password, click "store in vault" and enter the password you provided when you ran the MySQL instance earlier, as in this tutorial we use the "my-secret-pw"
+![setup window](https://user-images.githubusercontent.com/83501001/174445089-1ab276d3-bcf1-49f7-996a-713c4b1c6b9f.jpg)
+
 9. Leave everything by default and click test
 - If everything has been set up correctly, connection should be successful
 10. Click "ok" and save the connection
