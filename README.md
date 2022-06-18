@@ -80,6 +80,15 @@ docker login
 **"healthy" or "up 10 seconds" means the container is running***
 ![docker status](https://user-images.githubusercontent.com/83501001/174443499-ff3290d2-a66b-4e95-84e4-8e5f054c0a89.png)
 
+5. You now have a docker container running with your MySQL database
+6. After that we can finally connect to database and some SQL queries
+- For this tutorial, we wil be using MySQL Workbench to connect
+- If you have not yet downloaded MySQL Workbench, you may do so at https://www.mysql.com/products/workbench/
+- You may use other IDE that works on your desktop and the process should be similar
+7. In MySQL Workbench, click "create a new connection" icon 
+![create new connection](https://user-images.githubusercontent.com/83501001/174443736-059a76fd-bd43-40f0-9ca0-723e0b18eea3.jpg)
+
+
 
 ## How to deploy PHPMyAdmin on docker
 
