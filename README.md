@@ -1,11 +1,11 @@
 # Creating a web service on Docker
-Hello humans, we are students from IIUM International Islamic University Malaysia. Our team consists of 4 members:
+Hello humans, we are students from CSCI 3300 Operating System Section 1. Our team project consists of 4 members:
 1) Nabilah Hakim binti Hazri (2013672)
 2) Tanjim Mst Mobasshira Sadia (1824612)
 3) Hareez Sidqi Mohd Fuad (2015199)
 4) Mohammed Fahmi Ahmed (1914939)
 
-We are instructed by Dr. Rizal, our lecturer on an OS project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN on Docker to create a web service.  In this repository we will provide you on:
+We were instructed by Dr. Rizal, our lecturer on an OS project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN on Docker to create a web service.  In this repository we will provide you on:
 1. [How to Install docker on your computer](#How-to-Install-docker-on-your-computer)
 2. [How to deploy PHP on docker](#How-to-deploy-PHP-on-docker)
 3. [How to deploy Apache on docker](#How-to-deploy-Apache-on-docker)
