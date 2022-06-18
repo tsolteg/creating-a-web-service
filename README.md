@@ -1,3 +1,5 @@
+# What is docker?
+Docker is a software framework for constructing, executing, and managing containers on servers and in the cloud. It is a subset of the Moby project. The tools (commands and a daemon) or the Dockerfile file format are both referred to as "docker."
 # creating-a-web-service
 Hello humans, we are students from IIUM (International Islamic University Malaysia) on a project to deploy a complete Apache/NGINX, PHP, MONGODB/MYSQL and PHPMYADMIN to create a web service.  In this repo we will provide you on:
 1. How to Install docker on your computer
