@@ -19,5 +19,5 @@ Hello humans, we are students from IIUM (International Islamic University Malays
   docker version
 ```
 This indicates that the Docker is currently running on your desktop
-![My Image](docker-version.png)
+![docker version](https://user-images.githubusercontent.com/83501001/174430912-cd24d7f5-bd89-422f-8238-c384ea05ea87.png)
 
