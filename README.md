@@ -32,6 +32,7 @@ Hello humans, we are students from IIUM (International Islamic University Malays
 This is how you docker-compose.yml should look like.
 ![compose.yml file running](/Images/ymlCode.png)
 
+
 Let’s test it out. Go ahead and run docker-compose up. That’s going to pull all the information, download the Apache server, build the image, and run the container.
 ![ApacheServerRunning](/Images/ApacheRunning.png)
     
