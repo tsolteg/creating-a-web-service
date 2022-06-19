@@ -224,16 +224,16 @@ If everything went properly, type the following command to observe the running c
 docker ps -a
 ```
  The command we used above should displays something like
- ![docker ps]
+ ![docker ps](https://user-images.githubusercontent.com/107748397/174468070-67ff7a57-4516-466f-94d2-fc5e47dc950f.jpeg)
  
  -Access phpmyadmin
  
 Simply open your browser and type this link:(  http://localhost:8081/ ) so as a result, your phpMyAdmin instance will appear.To access, type root as username and the password you established in the step one when running the mysql container
 
- [phpmyadmin login](https://user-images.githubusercontent.com/107748397/174467946-f5041e08-fcc7-4c5f-923f-7f57a6cee8b4.png)
+ ![phpmyadmin login](https://user-images.githubusercontent.com/107748397/174467946-f5041e08-fcc7-4c5f-923f-7f57a6cee8b4.png)
  
  This your phpmyadmin page after you login 
- [phpmyadmin](https://user-images.githubusercontent.com/107748397/174468007-48287d76-dbe4-4400-b324-0af2f52b3aa9.png)
+! [phpmyadmin](https://user-images.githubusercontent.com/107748397/174468007-48287d76-dbe4-4400-b324-0af2f52b3aa9.png)
 
  That's all…everything is done!
 
