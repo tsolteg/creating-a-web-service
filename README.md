@@ -175,10 +175,48 @@ docker pull phpmyadmin
 ```
 docker images
 ```
+![docker images](https://user-images.githubusercontent.com/107748397/174466444-9e5239ac-6068-401d-bf99-bcb2b47c96f7.png)
+
+Once we have the image of phpMyAdmin , we need to run the container and we should make sure that the container connects with the other container running mysql
+
+```
+docker run --name myfahadmin -d --link my-own-mysql:db -p 8081:80 phpmyadmin
+```
+
+- Let’s explain the options for the above command  
+
+>docker run
+
+This is a command to create and start a container using an image
+
+>name 
+
+This is allows us to assign a specific name for our running container
+
+>-d 
+
+This makes the container run in the background
+
+>--link
+
+This will provides access to another container running in the host
+
+>my-own-mysql
+
+This is the container that we used to link mysql
+
+>-p
+
+By default, you can't access PHPMyAdmin outside of the docker container; to do so, we need to forward or map its default port to the host machine's port.
+
+>8081:80
+
+The port number of the host
 
 
+>phpmyadmin
 
-
+It's the name of the Docker image we got
 
 
 
