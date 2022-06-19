@@ -161,3 +161,26 @@ docker login
 
 
 ## How to deploy PHPMyAdmin on docker
+- PhpMyAdmin Docker 
+
+If your system already has docker container  then the next step is to download  the latest stable version of the docker image of phpMyAdmin available on [Docker Hub](https://hub.docker.com/_/phpmyadmin). open a command  terminal and type the following:
+
+```
+docker pull phpmyadmin
+```
+![pull phpmyadmin](https://user-images.githubusercontent.com/107748397/174461043-921870b3-d821-47ea-9569-71c86cb2b631.png)
+
+- Docker images
+
+```
+docker images
+```
+
+
+
+
+
+
+
+
+
