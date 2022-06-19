@@ -89,10 +89,7 @@ If you open the Docker desktop engine, the container should be up and running.
 In order to run MySQL on docker we need to :
     
 1. Make sure that the Docker is running on your desktop
-2. Open Cmd or Terminal depending on your OS and Log in to Docker
-```
-docker login
-```
+2. Open Cmd or Terminal depending on your OS and Log in to Docker using ``` docker login ```
 - You may create an account on Docker Hub https://hub.docker.com
 
 3. Download MySQL image
@@ -157,6 +154,48 @@ docker login
 ![grid connection](https://user-images.githubusercontent.com/83501001/174445247-46b4f023-9050-415e-b22d-b837dbf9cdd3.jpg)
 - this will lead to the MySQL workspace and you may enter your query 
 ![mysql workspace](https://user-images.githubusercontent.com/83501001/174445313-e0240e9a-cdf8-4723-91b6-7b1512accf9e.png)
+12. I will be showing you some example queries to indicate that our MySQL docker setup is a success 
+- first lets enter a query to create a new database 
+```
+  create database studentinfo
+```
+
+**this circle at the bottom page indicating that the query is entered and stored***
+![creTE database](https://user-images.githubusercontent.com/83501001/174474533-5d99cf87-3f58-4df1-aad1-96390f124848.jpg)
+- next lets use the database and enter create table and insert values into the table queries and run
+```
+  use studentinfo;
+  
+  create table student ( 
+	id int NOT NULL,
+	stud_name varchar(50) NOT NULL,
+    class varchar(15) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+insert into student values
+(1001, 'Nabilah Hakim', '5 Cerdik'), (1002, 'Hareez Sidqi', '5 Pintar'), (1003, 'Fahmi Ahmed', '5 Cerdik'), (1004, 'Mobashirra Sadia','5 Amanah');
+```
+![use create insert](https://user-images.githubusercontent.com/83501001/174474680-5227dedc-470d-4622-9d73-de7656d223a9.png)
+- lastly you can see if the table has been created or not by simply running select all query
+ ```
+  select * from student
+```
+
+**as you can see here the table and the values that we just created are stored in the database**
+![select all](https://user-images.githubusercontent.com/83501001/174474781-5cb10f89-8f62-4f31-9c70-a7e4ed356fcc.jpg)
+
+- Congratulations! you have successfully setup MySQL on Docker 
+- To stop the database you may run  ``` docker stop some-mysql``` on Cmd/Terminal depending on your image name that you have entered **OR** click stop in the Docker Application
+
+**stop MySQL image**
+![stop](https://user-images.githubusercontent.com/83501001/174475220-fe368647-8e07-4241-97b4-7de0ef1b5961.jpg)
+
+- To start the database again, you may run the MySQL instance given in the third step **OR** you may start it on the Docker application itself
+
+**start MySQL image**
+![start](https://user-images.githubusercontent.com/83501001/174475246-c6519697-eb3b-4e98-a117-e8a5b03fd03c.jpg)
+
 
 
 
