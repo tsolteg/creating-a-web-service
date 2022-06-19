@@ -127,13 +127,13 @@ In order to run MySQL on docker we need to :
 - will expose or open port from Docker container to our operating system, allowing us to use a program such as MySQL workbench to connect to all the databases
 - If we do not expose the port, we will have to run commands on Cmd/Terminal to run SQL which is not ideal
 - Run either instances and it will start downloading and take a few minutes
-4. Once the image has been dowloanded, you can check the status of the container using ```docker ps ```
+4. Once the image has been downloaded, you can check the status of the container using ```docker ps ```
 
 **"healthy" or "up 10 seconds" means the container is running***
 ![docker status](https://user-images.githubusercontent.com/83501001/174443499-ff3290d2-a66b-4e95-84e4-8e5f054c0a89.png)
 
 5. You now have a docker container running with your MySQL database
-6. After that we can finally connect to database and some SQL queries
+6. After that we can finally connect to database and do some SQL queries
 - For this tutorial, we wil be using MySQL Workbench to connect
 - If you have not yet downloaded MySQL Workbench, you may do so at https://www.mysql.com/products/workbench/
 - You may use other IDE that works on your desktop and the process should be similar
@@ -155,7 +155,7 @@ In order to run MySQL on docker we need to :
 - this will lead to the MySQL workspace and you may enter your query 
 ![mysql workspace](https://user-images.githubusercontent.com/83501001/174445313-e0240e9a-cdf8-4723-91b6-7b1512accf9e.png)
 12. I will be showing you some example queries to indicate that our MySQL docker setup is a success 
-- first lets enter a query to create a new database 
+- first let's enter a query to create a new database 
 ```
   create database studentinfo
 ```
